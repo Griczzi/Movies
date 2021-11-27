@@ -2,15 +2,6 @@
 
 const numberOfFilms = +prompt('Сколько фильмов вы уже просмотрели?', '10');
 
-if (numberOfFilms < 10) {
-  alert('мало');
-} else if (numberOfFilms <= 20) {
-  alert('норма');
-} else if (numberOfFilms >= 30) {
-  alert('ты гурман');
-} else {
-  alert('что то не так');
-}
 
 
 const personalMovieDB = {
@@ -35,6 +26,15 @@ for (let i = 0; i < 2; i++) {
   }
 }
 
+if (personalMovieDB.count < 10) {
+  alert('мало');
+} else if (personalMovieDB.count >= 10 && personalMovieDB.count <= 20) {
+  alert('норма');
+} else if (personalMovieDB.count >= 30) {
+  alert('ты гурман');
+} else {
+  alert('что то не так');
+}
 
 // if ((a && b == null)) {
 //   alert('Вы не можете проигнорировать эти вопросы');
